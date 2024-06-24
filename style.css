@@ -1,25 +1,29 @@
+*{
+    margin: 5px;
+    padding: 0;
+    text-align: center;
+}
 body{
     border: 2px solid #000000;
     height: 800px;
 }
 
 nav{
-    border: 2px solid #e5fd07;
+    border: 2px solid #06b1fa;
     overflow: hidden;
 }
 
 .logo{
-    border: 5px solid red;
+    border: 2px solid red;
     float: left;
-    font-size: 3rem;
+    font-size: 1.4rem;
 }
 
 .nav-links{
-    border: 5px solid red;
+    border: 2px solid red;
     display: flex;
     flex-direction: row;
     float: right;
-    margin: 0;
 }
 
  .nav-links li{
@@ -39,6 +43,29 @@ li:hover{
 }
 
 .intro {
-    text-align: center;
     border: 2px solid #06b1fa;
+}
+
+h1 ,h2, h3 ,p{
+    border: 1px solid red;
+}
+
+.about{
+    border:2px solid #06b1fa;
+}
+
+.about-des{
+    border: 1px solid #df9d0e;
+}
+
+.about-skills{
+    border: 1px solid #df9d0e;
+}
+
+.skills{
+    border: 1px solid red;
+}
+
+.skill{
+    border: 1px solid green;
 }
