@@ -27,21 +27,28 @@ nav{
     top: 0;
     left: 0;
     margin: 0;
-    z-index: 100;
+    z-index: 1000;
     background: #7ad3d6;
 }
 
 .logo{
     position: relative;
-    float: left;
-    margin: 1rem;
-    font-size: 1.4rem;
+}
+
+.logo label{    
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin: 0;
 }
 
 .nav-links{
     position: relative;
     display: flex;
     flex-direction: row;
+    margin: 0;
 }
 
  .nav-links li{
@@ -58,16 +65,18 @@ nav{
     font-weight: bolder;
     text-transform: uppercase;
     letter-spacing: 1px;
+    color: black;
     text-decoration: none;
 }
 
-li:hover{
-    background: #bfbfb7;
+.nav-links li a:hover{
+    color: #7146b6;
 }
 
 .social-icons{
     position: fixed;
     top: 30%;
+    right: 0;
     border-radius: 5px;
     margin: 0;
     z-index: 100;
