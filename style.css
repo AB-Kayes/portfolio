@@ -80,7 +80,7 @@ nav{
 
 .social-icons{
     position: fixed;
-    top: 35%;
+    top: 25%;
     margin: 0;
     right: 0;
     padding: 5px;
@@ -90,17 +90,17 @@ nav{
     background: #1718181a;
 }
 
-.social-icon{
+.social-icon img{
     border-radius: 5px;
-    padding: 12px;
+    padding: 10px;
     transition: background .3s;
 }
-.social-icon:hover{
-    background: #cfcece;
+.social-icon img:hover{
+    background: #cccbcb;
 }
 
-.social-icon:active{
-    background: #b2b0b4;  
+.social-icon img:active{
+    background: #b2b0b4;    
 }
 
 .intro {
@@ -121,7 +121,11 @@ nav{
     font-size: 5rem;
 }
 
-.intro-btn{
+form .btn{
+    margin: 0;
+}
+
+.btn{
     font-weight: bold;
     font-size: 1.1rem;
     letter-spacing: 2px;
@@ -133,7 +137,7 @@ nav{
     box-shadow: 2px 2px #333;
 }
 
-.intro-btn:hover{
+.btn:hover{
     position:relative;
     right: 2px;
     bottom: 2px;
@@ -141,7 +145,7 @@ nav{
     cursor: pointer;
 }
 
-.intro-btn:active{
+.btn:active{
     background: #cfcdcd;
 }
 
