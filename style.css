@@ -23,10 +23,11 @@ nav{
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    width: 100%;
+    font-size: 1.1rem;
     top: 0;
     left: 0;
     margin: 0;
+    width: 100%;
     z-index: 1000;
     backdrop-filter: blur(5px);
     background: #1718181a;
@@ -40,27 +41,28 @@ nav{
 
  .nav-links li{
     list-style: none;
-    padding: 11px;
-    border-radius: 5px;
-    color: #333;
-}
-
-.nav-links li a{
     text-align: center;
     font-weight: bolder;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: black;
-    transition: color .3s;
+    padding: 11px;
+    color: #000000;
+    transition: 0.3s;
+}
+
+.nav-links a{
+    color: #ff000000;
     text-decoration: none;
 }
 
-.nav-links li a:hover{
-    color: #7146b6;
+.nav-links li:hover{
+    color: #CA2C92;
+    background: #d6d4d8;
 }
 
-.nav-links li:hover{
-    background: rgb(221, 216, 216);
+.nav-links li:active{
+    color: #8b1c65;
+    background: #b2b0b4;    
 }
 
 .logo{
@@ -94,7 +96,7 @@ nav{
     transition: background .3s;
 }
 .social-icon:hover{
-    background: #ccc1c193;
+    background: #d6d4d8;
 }
 
 .intro {
@@ -106,14 +108,23 @@ nav{
 
 .intro-name{
     font-size: 2rem;
-    width: 92%;
     max-width: 90rem;
 }
 
+.intro-name h1{
+    font-size: 5rem;
+}
+
 .intro-btn{
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
     padding: 1rem 2rem;
-    border-radius: 5px;
+    margin-top: 40px;
+    border-radius: 10px;
     transition: .3s;
+    background: #eeeded;
+    box-shadow: 2px 2px #333;
 }
 
 .intro-btn:hover{
@@ -124,8 +135,12 @@ nav{
     cursor: pointer;
 }
 
+.intro-btn:active{
+    background: #cfcdcd;
+}
+
 .about{
-    padding-top: 80px;
+    padding-top: 60px;
 }
 
 .about-me{
@@ -163,7 +178,7 @@ nav{
 }
 
 .projects{
-    padding-top: 80px;
+    padding-top: 60px;
 }
 
 .my-projects{
@@ -179,7 +194,7 @@ nav{
 }
 
 .contact{
-    padding-top: 80px;
+    padding-top: 60px;
 }
 
 .main-form{
@@ -204,6 +219,9 @@ form{
     width: 100%;
     border-radius: 5px;
     padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    background: #fafafa;
 }
 
 footer{
