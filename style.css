@@ -57,7 +57,7 @@ nav{
     height: 100%;
 }
 
-.nav-links li:hover{
+.nav-links li:active, .nav-links li:hover{
     color: #CA2C92;
     background: #d6d4d894;
 }
@@ -66,6 +66,114 @@ nav{
     color: #8b1c65;
     background: #b2b0b494;   
 }
+
+.mb-nav-links{
+    display: none;
+}
+
+@media only screen and (max-width: 44rem){
+    .nav-links{
+        display: none;
+    }
+
+    .mb-nav-links{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        right: -100%;
+        top: 3.7rem;
+        width: 12rem;
+        height: 100vh;
+        z-index: 200;
+        backdrop-filter: blur(10px);
+        background: #1718181a;
+        transition: .3s;
+    }
+
+    #check{
+        display: none;
+    }
+
+    .check-label {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin: 10px 20px;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        gap: 10px;
+        transition-duration: .3s;
+        z-index: 250;
+      }
+      
+      .bar {
+        width: 100%;
+        height: 4px;
+        background-color: #000000;
+        border-radius: 5px;
+        transition-duration: .3s;
+      }
+
+      #check:checked ~ .mb-nav-links{
+          right: 0;
+      } 
+
+      #check:checked + .check-label .bar{
+        margin-left: 13px;
+      }
+
+    #check:checked + .check-label #bar2 {
+        transform: rotate(135deg);
+        margin-left: 0;
+        transform-origin: center;
+        transition-duration: .3s;
+      }
+      
+      #check:checked + .check-label #bar1 {
+        transform: rotate(45deg);
+        transition-duration: .3s;
+        transform-origin: left center;
+      }
+      
+      #check:checked + .check-label #bar3 {
+        transform: rotate(-45deg);
+        transition-duration: .3s;
+        transform-origin: left center;
+      } 
+
+    .mb-nav-links li{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        font-weight: bolder;
+        text-transform: uppercase;
+        border-radius: 5px;
+        padding: 1rem;
+        color: #000000;
+        transition: .3s;
+    }
+
+    .mb-nav-links a{
+        color: #ff000000;
+        text-decoration: none;
+    }
+    
+    .mb-nav-links li:hover{
+        color: #CA2C92;
+        background: #d6d4d894;
+    }
+    
+    .mb-nav-links li:active{
+        color: #8b1c65;
+        background: #b2b0b494;   
+    }
+    
+}
+
 
 .header-logo{
     display: flex;
@@ -91,7 +199,6 @@ nav{
     grid-template-rows: repeat(4,1fr);
     position: fixed;
     top: 25%;
-    margin: 0;
     right: 0;
     padding: 5px;
     z-index: 100;
@@ -116,6 +223,12 @@ nav{
     background: #b2b0b494;    
 }
 
+@media only screen and (max-width: 44rem){
+    .social-icons{
+        display: none;
+    }
+}
+
 .intro {
     display: flex;
     justify-content: center;
@@ -127,7 +240,6 @@ nav{
     line-height: 1;
     font-size: 2.8rem;
     font-weight: bolder;
-    max-width: 90rem;
 }
 
 .intro-name h1{
@@ -136,7 +248,7 @@ nav{
     font-weight: bolder;
 }
 
-@media (max-width: 64rem){
+@media only screen and (max-width: 64rem){
     .intro-name{
         font-size: 2rem;
     }
@@ -144,6 +256,16 @@ nav{
     .intro-name h1{
         font-size: 7rem;
     }
+}
+
+@media only screen and (max-width: 44rem){
+    .intro-name{
+        font-size: 1.6rem;
+    }
+    
+    .intro-name h1{
+        font-size: 5rem;
+    }    
 }
 
 form .btn{
@@ -184,8 +306,14 @@ form .btn{
 
 .about-me{
     display: grid;
-    grid-template-columns: 2.5fr 1fr;
+    grid-template: 1fr/ 2.5fr 1fr;
     grid-gap: 2rem;
+}
+
+@media only screen and (max-width: 64rem){
+    .about-me{
+        grid-template: 2.2fr 1.3fr / 1fr;
+    }
 }
 
 .about-me h3{
@@ -222,13 +350,10 @@ form .btn{
     margin: 0 .5rem .5rem 0;
     padding: .7rem 1rem;
     border-radius: 5px;
+    max-width: 17rem;
     min-width: 5rem;   
     box-shadow: 2px 2px 1px #00000028; 
     background: #e7e7e7c7;
-}
-
-.last {
-    max-width: 17rem;
 }
 
 .projects{
@@ -242,14 +367,23 @@ form .btn{
 
 .my-projects{
     display: grid;
+    grid-gap: 10px;
     grid-template: repeat(2,1fr)/repeat(2,1fr);
 }
 
 .project{
+    justify-self: center;
     height: 350px;
+    width: 100%;
     border-radius: 10px;
     border: 2px solid black;
-    margin: 5px;
+    max-width: 46rem;
+}
+
+@media only screen and (max-width: 64rem){
+    .my-projects{
+        grid-template: repeat(4,1fr)/1fr;
+    }
 }
 
 .contact{
