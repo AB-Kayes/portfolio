@@ -64,7 +64,7 @@ nav{
 
 .nav-links li:active{
     color: #8b1c65;
-    background: #b2b0b494;   
+    background: #b2b0b494; 
 }
 
 .mb-nav-links{
@@ -182,8 +182,9 @@ nav{
 }
 
 .logo-img{
-    width: 3.5rem;
+    width: 3rem;
     display: block;
+    border-radius: 50%;
 }
 
 .logo-sub{    
@@ -216,11 +217,11 @@ nav{
 }
 
 .social-icon-img:hover{
-    background: #cccbcb94;
+    background: #c0c0c0ad; 
 }
 
-.social-icon-img:active{
-    background: #b2b0b494;    
+.social-icon-img:active{   
+    background: #a5a5a5c2;
 }
 
 @media only screen and (max-width: 44rem){
