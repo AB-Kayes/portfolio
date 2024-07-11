@@ -6,6 +6,7 @@
 
 html{
     scroll-behavior: smooth;
+    scroll-padding: 14vmax;
 }
 
 body{
@@ -16,6 +17,18 @@ body{
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5);
 	background-size: 400% 400%;
 	animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 section h1{
@@ -244,18 +257,6 @@ nav{
 	height: 100vh;
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
 .intro-name{
     line-height: 1;
     font-size: 2.8rem;
@@ -316,7 +317,6 @@ form .btn{
 }
 
 .about{
-    padding-top: 50px;
 }
 
 .about-container{
@@ -377,7 +377,6 @@ form .btn{
 }
 
 .projects{
-    padding-top: 50px;
 }
 
 .project-container{
@@ -407,7 +406,6 @@ form .btn{
 }
 
 .contact{
-    padding-top: 50px;
 }
 
 .contact-container{
