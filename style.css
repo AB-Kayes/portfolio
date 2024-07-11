@@ -219,7 +219,7 @@ nav{
     display: block;
     width: 3rem;
     border-radius: 10px;
-    padding: 9px;
+    padding: 8px;
     transition: background .3s;
 }
 
@@ -232,17 +232,25 @@ nav{
     background: white;
 }
 
+.one:active,.two:active{   
+    background: #b1b1b1;
+}
+
 .three:hover{
     fill: white;
     background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
  }
 
+ .three:active{
+    background: linear-gradient(45deg, #b19750, #974e15, #7a1844, #962fbf, #363e8f); }
+
 .four:hover{
     fill: white;
-    background: #0A66C2;
+    background: #0077B5;
 }
-.social-icon-img:active{   
-    background: #a5a5a5c2;
+
+.four:active{
+    background: #083e58;
 }
 
 @media only screen and (max-width: 44rem){
@@ -374,7 +382,7 @@ form .btn{
     max-width: 17rem;
     min-width: 5rem;   
     box-shadow: 2px 2px 1px #00000028; 
-    background: #e7e7e7c7;
+    background: #d8d8d8a2;
 }
 
 .projects{
