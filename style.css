@@ -13,22 +13,7 @@ body{
     text-align: center;
     overflow-x: hidden;
     overflow-y: scroll;
-    font-family: "Poppins", sans-serif;  
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5);
-	background-size: 400% 400%;
-	animation: gradient 10s ease infinite;
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    font-family: "Poppins", sans-serif;
 }
 
 section h1{
@@ -122,7 +107,7 @@ nav{
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        margin: 10px 20px;
+        margin: 20px 20px;
         right: 0;
         width: 40px;
         height: 40px;
