@@ -12,7 +12,10 @@ body{
     text-align: center;
     overflow-x: hidden;
     overflow-y: scroll;
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;  
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
 }
 
 section h1{
@@ -67,13 +70,18 @@ nav{
     background: #b2b0b494; 
 }
 
-.mb-nav-links{
+.mb-nav{
     display: none;
 }
 
 @media only screen and (max-width: 44rem){
+
     .nav-links{
         display: none;
+    }
+
+    .mb-nav{
+        display: inline;
     }
 
     .mb-nav-links{
@@ -232,8 +240,20 @@ nav{
 .intro {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    align-items: center; 
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .intro-name{
