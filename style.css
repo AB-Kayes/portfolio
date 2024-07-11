@@ -204,28 +204,43 @@ nav{
 .social-icons{
     display: grid;
     grid-template-rows: repeat(4,1fr);
+    gap: 3px;
     position: fixed;
     top: 25%;
     right: 0;
     padding: 5px;
     z-index: 100;
     backdrop-filter: blur(4px);
-    border-radius: 5px;
-    background: #1718181a;
+    border-radius: 10px;
+    background: #1718182f;
 }
 
 .social-icon-img{
     display: block;
     width: 3rem;
-    border-radius: 5px;
-    padding: 10px;
+    border-radius: 10px;
+    padding: 9px;
     transition: background .3s;
 }
 
-.social-icon-img:hover{
-    background: #c0c0c0ad; 
+.one:hover{
+    fill:#1D9BF0;
+    background: white; 
 }
 
+.two:hover{
+    background: white;
+}
+
+.three:hover{
+    fill: white;
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+ }
+
+.four:hover{
+    fill: white;
+    background: #0A66C2;
+}
 .social-icon-img:active{   
     background: #a5a5a5c2;
 }
