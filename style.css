@@ -384,11 +384,10 @@ form .btn{
     max-width: 17rem;
     min-width: 5rem; 
     color: #222121;  
-    box-shadow: 1px 1px 3px black; 
     background: #d8d8d8a2;
 }
 
-.projects{
+.projects *{
 }
 
 .project-container{
@@ -398,23 +397,35 @@ form .btn{
 
 .my-projects{
     display: grid;
-    grid-gap: 10px;
-    grid-template: repeat(2,1fr)/repeat(2,1fr);
+    grid-gap: 30px;
+    grid-template-columns: 1fr;
 }
 
 .project{
     justify-self: center;
     height: 350px;
     width: 100%;
-    border-radius: 10px;
-    border: 2px solid black;
+    border-radius: 5px;
     max-width: 46rem;
+    box-shadow: 2px 2px 10px #0f0f0f8a;
 }
 
-@media only screen and (max-width: 64rem){
-    .my-projects{
-        grid-template: repeat(4,1fr)/1fr;
-    }
+.pro-one{
+    background-image: url('assets/transparency.jpeg');
+    background-repeat: no-repeat;
+    background-position:top;   
+    background-size: cover;
+}
+
+.pro-two{
+    background-image: url('assets/portfolio.jpeg');
+    background-repeat: no-repeat;
+    background-position:top;   
+    background-size: cover;
+}
+
+.project div{    
+  background: linear-gradient(0deg,#00000088 30%, #ffffff44 100%);
 }
 
 .contact{
@@ -471,7 +482,6 @@ footer h2{
 .footer-container{
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #fafafa;
     margin: 10px;
     padding-bottom: 20px;
 }
@@ -545,5 +555,27 @@ footer h2{
 
     .footer-des{
         width: 100%;
+    }
+}
+
+.footer-lower {
+    padding: 1rem 0;
+    color: #eee;
+    font-size: 12px;
+    text-align: center;
+    border-top: 1px solid #444;
+}
+
+.footer-lower a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: white;
+    margin-left: 2px;
+
+}
+
+@media only screen and (max-width: 56.25em) {
+    .footer-lower {
+        padding:3.5rem 0
     }
 }
