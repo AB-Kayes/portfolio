@@ -213,7 +213,7 @@ nav{
     z-index: 100;
     backdrop-filter: blur(4px);
     border-radius: 10px;
-    background: #1718182f;
+    background: #a8a8a82f;
 }
 
 .social-icon-img{
@@ -311,7 +311,7 @@ form .btn{
     margin-top: 40px;
     border-radius: 10px;
     transition: .3s;
-    background: #eeeded;
+    background: #f3f1f1;
     box-shadow: 2px 2px #202020;
 }
 
@@ -384,7 +384,7 @@ form .btn{
     max-width: 17rem;
     min-width: 5rem; 
     color: #222121;  
-    background: #d8d8d8a2;
+    background: #e9e8e8a2;
 }
 
 .projects *{
@@ -513,10 +513,11 @@ footer h2{
 
 .footer-des{
     width: 60%;
+    max-width: 500px;
 }
 
 .footer-para {
-    font-size: .8rem;
+    font-size: 14px;
     padding: 10px;
     text-align: justify;
 }
