@@ -231,10 +231,16 @@ nav{
 }
 
 .two:hover{
-    background: white;
+    background: #2876dd;
+    fill: white;
 }
 
-.one:active,.two:active{   
+.two:active{
+    background: #104993;
+    fill: rgb(223, 223, 223);
+}
+
+.one:active{   
     background: #b1b1b1;
 }
 
@@ -272,6 +278,25 @@ nav{
     line-height: 1;
     font-size: 2.8rem;
     font-weight: bolder;
+}
+
+.hi{
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 1.9s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(24.0deg) }
+   20% { transform: rotate(-14.0deg) }
+   30% { transform: rotate(24.0deg) }
+   40% { transform: rotate(-8.0deg) }
+   50% { transform: rotate(8.0deg) }
+   60% { transform: rotate( 0.0deg) }
+  100% { transform: rotate( 0.0deg) }
 }
 
 .intro-name h1{
