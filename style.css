@@ -502,6 +502,12 @@ form{
     margin-left: 7px;
 }
 
+.status-message {
+    margin: 15px;
+    font-size: 14px;
+    color: #28a745;
+  }
+
 @media only screen and (max-width: 37rem){
     form{
         padding: 1.2rem;
