@@ -212,7 +212,7 @@ nav{
     gap: 8px;
     z-index: 100;
     backdrop-filter: blur(4px);
-    border-radius: 10px;
+    border-radius: 12px;
     background: #a8a8a82f;
 }
 
@@ -220,7 +220,7 @@ nav{
     overflow: visible;
     display: block;
     width: 2.6rem;
-    border-radius: 9px;
+    border-radius: 7px;
     padding: 7px;
     transition: background .3s;
 }
@@ -410,6 +410,12 @@ form .btn{
     box-shadow: 2px 2px 10px #0f0f0f8a;
 }
 
+@media only screen and (max-width: 37rem) {
+    .project{
+        height: 250px;
+    }
+}
+
 .pro-one{
     background-image: url('assets/transparency.jpeg');
     background-repeat: no-repeat;
@@ -465,6 +471,20 @@ form{
     border: none;
     background: #fafafa;
     outline: none;
+}
+
+.input-label{
+    margin-left: 7px;
+}
+
+@media only screen and (max-width: 37rem){
+    form{
+        padding: 1.2rem;
+    }
+
+    .input{
+        border-radius: 12px;
+    }
 }
 
 footer{
@@ -551,7 +571,7 @@ footer h2{
 @media only screen and (max-width: 27rem){
 
     .footer-container{
-        margin: 0;
+        margin: 5px;
     }
 
     .footer-des{
@@ -573,10 +593,4 @@ footer h2{
     color: white;
     margin-left: 2px;
 
-}
-
-@media only screen and (max-width: 56.25em) {
-    .footer-lower {
-        padding:3.5rem 0
-    }
 }
