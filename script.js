@@ -14,4 +14,5 @@ document.getElementById('contact-form').addEventListener('submit', function(even
           console.error('Failed to send message:', error);
       });
 });
+
   
