@@ -321,7 +321,13 @@ nav{
     }
     
     .intro-name h1{
-        font-size: 5rem;
+        font-size: 4.5rem;
+    }    
+}
+
+@media only screen and (max-width: 27rem){
+    .intro-name h1{
+        font-size: 4rem;
     }    
 }
 
@@ -449,7 +455,7 @@ form .btn{
 }
 
 .pro-two{
-    background-image: url('assets/portfolio.jpeg');
+    background-image: url('assets/portfolio.png');
     background-repeat: no-repeat;
     background-position:top;   
     background-size: cover;
