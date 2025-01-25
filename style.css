@@ -50,13 +50,15 @@ nav{
     padding: 1rem;
     color: #000000;
     transition: .3s;
-    height: 100%;
+    height: 100%; /* Ensure the list item fills the height */
 }
 
 .nav-links a{
     color: #ff000000;
     text-decoration: none;
-    height: 100%;
+    height: 100%; /* Ensure the link fills the height */
+    display: flex;
+    align-items: center; /* Center the text vertically */
 }
 
 .nav-links li:hover{
